@@ -19,7 +19,7 @@ This project is a web scraper built using Scrapy and Python to extract data abou
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/arlinndi9/stateofartscraper.git
+   git clone https://github.com/arlinndi9/stateofartscrapy.git
    cd stateofart-scraper
    ```
 
