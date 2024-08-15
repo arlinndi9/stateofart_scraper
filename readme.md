@@ -63,10 +63,4 @@ To make changes to the scraper or add new features:
 
 Feel free to open issues or submit pull requests. Contributions are welcome!
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-Feel free to adapt the README to fit the specific details of your project, including the correct repository URL, specific configuration details, and any additional sections you find necessary.
