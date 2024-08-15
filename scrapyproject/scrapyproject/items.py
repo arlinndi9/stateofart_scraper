@@ -9,7 +9,7 @@ class JacketItem(scrapy.Item):
     name = scrapy.Field()
     url = scrapy.Field()
     price = scrapy.Field()
-    sizes = scrapy.Field()  # Expecting a list of sizes
+    sizes = scrapy.Field()
     image_urls = scrapy.Field()
 class ScrapyprojectItem(scrapy.Item):
     # define the fields for your item here like:

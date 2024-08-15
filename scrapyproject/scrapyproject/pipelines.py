@@ -24,13 +24,12 @@ class PostgresPipeline:
         try:
             self.conn.commit()
         except Exception as e:
-            spider.logger.error(f"Error committing to the database: {e}")
+            spider.logger.error(f"error commit: {e}")
         finally:
             self.cursor.close()
             self.conn.close()
 
     def process_item(self, item, spider):
-        self.logger.info(f"Processing item: {item}")  # Log the item being processed
         try:
             self.cursor.execute(
                 """
@@ -46,7 +45,7 @@ class PostgresPipeline:
                 )
             )
         except Exception as e:
-            spider.logger.error(f"Error inserting item into the database: {e}")
+            spider.logger.error(f"error: {e}")
         return item
 
 class ScrapyprojectPipeline:
