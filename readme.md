@@ -19,7 +19,7 @@ This project is a web scraper built using Scrapy and Python to extract data abou
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/arlinndi9/stateofartscraper.git
+   git clone https://github.com/arlinndi9/stateofart_scraper.git
    cd stateofart-scraper
    ```
 
@@ -59,8 +59,32 @@ To make changes to the scraper or add new features:
 2. **Update items**: Change the data model in `items.py`.
 3. **Adjust pipelines**: Update data processing logic in `pipelines.py`.
 
+## Database Setup
+Create Database
+To create a PostgreSQL database for storing scraped data:
+```bash
+   CREATE DATABASE mydatabase;
+   ```
+Create Table
+To create the jackets table in your database:
+```bash
+CREATE TABLE jackets (
+    id SERIAL PRIMARY KEY,
+    product_name VARCHAR(255),
+    product_url TEXT,
+    price VARCHAR(50),
+    sizes TEXT[],
+    image_url TEXT
+);
+   ```
+Query Data
+To query data from the jackets table:
+```bash
+SELECT id, product_name, product_url, price, sizes, image_url
+FROM public.jackets;
+```
+
 ## Contributing
 
 Feel free to open issues or submit pull requests. Contributions are welcome!
-
 
